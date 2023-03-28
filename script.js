@@ -1,4 +1,15 @@
 
+var now = dayjs(); // Get the current date and time
+const currentHour = now.hour(); // Get the current hour (0-23)
+var dayOfWeek = now.format('dddd'); // Gets the day of the week 
+var month = now.format('MMMM'); // Gets the current month 
+ dayOfMonth = now.date(); // Get the day of the month as a number
+
+$('#currentDay').text(`${dayOfWeek} ${month} ${dayOfMonth}`); 
+//combines the variables to display
+
+
+
 $(function () {
   $(".saveBtn").on("click", function(){
  
